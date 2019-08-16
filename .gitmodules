@@ -1,0 +1,9 @@
+[submodule "pack/dist/start/YouCompleteMe"]
+	path = pack/dist/start/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe.git
+[submodule "pack/dist/start/ale"]
+	path = pack/dist/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "vim-source"]
+	path = vim-source
+	url = https://github.com/vim/vim.git
