@@ -7,6 +7,7 @@ TODO: Make this all possible offline.
 Download the repo
 ```
 git clone --recurse https://github.com/BenNewsome/vim-config.git
+git submodule update --init --recursive
 ```
 
 
@@ -60,5 +61,9 @@ https://github.com/ycm-core/YouCompleteMe
 
 
 # Install YouCompleteMe
+
+```
+cd ~/.vim/pack/dist/start/YouCompleteMe
 ./install.py
+```
 

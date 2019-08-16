@@ -7,8 +7,8 @@ main () {
 # ensure we can sudo ;-)
   sudo echo hi
 
-#  configure_vim
-#  make_vim
+  configure_vim
+  make_vim
   set_system_to_use_vim
 }
 
@@ -19,7 +19,7 @@ configure_vim () {
     --enable-multibyte \
     --enable-rubyinterp=yes \
     --enable-pythoninterp=yes \
-    --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+#    --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
     --enable-python3interp=yes \
     --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
     --enable-perlinterp=yes \
@@ -31,7 +31,7 @@ configure_vim () {
 
 make_vim () {
   cd ~/.vim/vim-source
-  make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
+  make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
   sudo make install
 }
 

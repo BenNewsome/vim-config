@@ -19,13 +19,27 @@ ruby-dev
 lua5.1
 lua5.1-dev
 libperl-dev
+cmake
 )
 
-echo "Please install the following package (If any are required).";
-echo "sudo apt-get install -y \\"
+
+apt_install="sudo apt-get install -y "
 for i in "${apt_packages[@]}"; do
-  if [ $(dpkg-query -W -f='${Status}' $i 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
-    echo "  $i \\";
-  fi
+  apt_install+="$i "
 done
-echo "Package check complete."
+
+pip_packages=(
+flake8
+jedi
+)
+
+pip_install="sudo pip install "
+pip3_install="sudo pip3 install "
+for i in "${pip_packages[@]}"; do
+  pip_install+="$i "
+  pip3_install+="$i "
+done
+
+echo $apt_install
+echo $pip_install
+echo $pip3_install
