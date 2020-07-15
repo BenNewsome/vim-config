@@ -1,5 +1,5 @@
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set number
+setlocal expandtab
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal number
 
