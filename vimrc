@@ -11,3 +11,5 @@ silent! helptags ALL
 filetype plugin on
 
 packloadall
+
+highlight ALEError ctermbg=none cterm=underline
