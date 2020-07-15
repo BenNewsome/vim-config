@@ -6,11 +6,13 @@ TODO: Make this all possible offline.
 
 Download the repo
 ```
-git clone --recurse https://github.com/BenNewsome/vim-config.git
-git submodule update --init --recursive
+git clone --recurse https://github.com/BenNewsome/vim-config.git ~/.vim
 ```
 
-
+Include the source code and dependencies
+```
+git submodule update --init --recursive
+```
 
 ## Check that all requirements are installed.
 

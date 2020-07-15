@@ -5,5 +5,5 @@
 	path = pack/dist/start/ale
 	url = https://github.com/dense-analysis/ale.git
 [submodule "vim-source"]
-	path = vim-source
+	path = install/vim-source
 	url = https://github.com/vim/vim.git
